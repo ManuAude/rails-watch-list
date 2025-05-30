@@ -11,6 +11,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar-lewagon">
+      <p>Hello</p>
+      <%= link_to 'My lists', lists_path %>
+      <%= link_to 'New list', new_list_path %>
+
+    </div>
+    <div class="container mt-5"><%= yield %></div>
+
   </body>
 </html>
